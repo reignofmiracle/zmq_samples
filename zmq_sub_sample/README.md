@@ -3,10 +3,10 @@ docker build -t zmq_sub_sample .
 
 # run
 
-# windows
+## windows
 docker run --rm -d -e PUB_ADDRESS=host.docker.internal --name zmq_sub_sample zmq_sub_sample
 
-# linux
+## linux
 docker run --network host --rm -d -e PUB_ADDRESS=localhost --name zmq_sub_sample zmq_sub_sample
 
 # logging
